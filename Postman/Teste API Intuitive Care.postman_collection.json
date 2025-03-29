@@ -1,0 +1,97 @@
+{
+	"info": {
+		"_postman_id": "7f59a088-bb9e-4a06-939b-5c4b5dec7676",
+		"name": "Teste API Intuitive Care",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40397926"
+	},
+	"item": [
+		{
+			"name": "Busca por DDD",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/buscar?termo=11\n\n",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"buscar"
+					],
+					"query": [
+						{
+							"key": "termo",
+							"value": "11\n\n"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Operadora por Nome",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/buscar?termo=3S",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"buscar"
+					],
+					"query": [
+						{
+							"key": "termo",
+							"value": "3S"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Todos os Registros",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/buscar?termo=",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"buscar"
+					],
+					"query": [
+						{
+							"key": "termo",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

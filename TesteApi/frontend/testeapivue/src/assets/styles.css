@@ -1,0 +1,28 @@
+/* Estilo global */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  h1, h2 {
+    color: #FF6600;
+  }
+  
+  .router-link-active {
+    color: #FF6600;
+  }
+  
+  .button {
+    background-color: #FF6600;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  .button:hover {
+    background-color: #cc5200;
+  }
+  
