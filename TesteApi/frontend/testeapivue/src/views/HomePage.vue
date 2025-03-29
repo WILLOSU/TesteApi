@@ -1,6 +1,6 @@
 <template>
   <div class="home-page">
-    <h1>Bem-vindo à Intuitive Care</h1>
+    <h1>Intuitive Care</h1>
     
     <!-- Campo de pesquisa com ícone -->
     <div class="input-container">
@@ -56,7 +56,7 @@ export default {
 
       try {
         // Requisição para a API usando a URL configurada na variável de ambiente
-        const resposta = await fetch(`${process.env.VUE_APP_API_URL}/buscar?termo=${this.termoBusca}`);
+        const resposta = await fetch(`http://127.0.0.1:5000/buscar?termo=${this.termoBusca}`);
         const data = await resposta.json();
 
         console.log('Resposta da API:', data);  // Verifique os dados retornados pela API
